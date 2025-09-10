@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # 检查是否以 root 权限运行
+
 if [ "$EUID" -ne 0 ]; then
   echo "请以 root 权限运行此脚本（使用 sudo）。"
   exit 1
